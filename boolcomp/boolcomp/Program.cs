@@ -8,7 +8,7 @@ namespace boolcomp
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Enter even number");
             int num = Convert.ToInt32( Console.ReadLine());
@@ -31,6 +31,9 @@ namespace boolcomp
                         break;
                     default:
                         Console.WriteLine("Something went wrong");
+                        Console.WriteLine("Enter number");
+                        num = Convert.ToInt32(Console.ReadLine());
+                        res = num % 2;
                         break;
 
                 }
