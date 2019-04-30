@@ -14,8 +14,11 @@ namespace stringoperation
             string fname = Console.ReadLine();
             Console.WriteLine("Enter your LastName");
             string lname = Console.ReadLine();
+
+            Console.WriteLine("what is your age");
+           int age = Convert.ToInt32(Console.ReadLine());
             //string concatenation
-            Console.WriteLine("Your name is :" + fname + " " + lname);
+            Console.WriteLine("Your name is :" + fname + " " + lname +" and age is"+ age.ToString());
             //String convert to uppercase
             string up = fname.ToUpper();
             Console.WriteLine("----------------------");
