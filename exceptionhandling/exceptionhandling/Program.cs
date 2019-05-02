@@ -16,13 +16,17 @@ namespace exceptionhandling
             {
 
                 Console.WriteLine("Enter number to divide each number in list");
-                float num2 = Convert.ToInt32(Console.ReadLine());
+               int num2 = Convert.ToInt32(Console.ReadLine());
                 foreach (int number in num)
                 {
                     float res = number / num2;
                     Console.WriteLine(number + "divided by " + num2 + "=" + res);
 
                 }
+            }
+            catch(DivideByZeroException ex)
+            {
+                Console.WriteLine(ex.Message);
             }
             catch (FormatException ex)
             {
