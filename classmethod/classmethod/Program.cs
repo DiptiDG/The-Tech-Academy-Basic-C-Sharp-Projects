@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace classmethod
 {
-   public static class Program//declaring class static
+   class Program
     {
         static void Main(string[] args)
         {
            
-            dividemethod div = new dividemethod();
+          
             Console.WriteLine("Enter number");
             int x = Convert.ToInt32(Console.ReadLine());
             int y;
-           // div.Division( x);
-            div.Division(x, out y);
+           dividemethod.Division( x);
+            dividemethod.Division(x, out y);
         }
     }
 }

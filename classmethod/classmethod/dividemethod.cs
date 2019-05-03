@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace classmethod
 {
-    class dividemethod
+    public static class dividemethod // declaring class static
     {
-        public  void Division( int a)// creating method that takeinput from user and return number/2;
+        public static void Division( int a)// creating method that takeinput from user and return number/2;
         {
            a = a / 2;
             Console.WriteLine(a);
@@ -18,10 +18,11 @@ namespace classmethod
 
         }
         //Creating  method with output parameters.
-        public void Division(int a, out int b)//overloading method
+        public static void Division(int a, out int b)//overloading method
         {
             b = a / 2;
             Console.WriteLine("output :"+b);
+            Console.Read();
         }
 
     }
