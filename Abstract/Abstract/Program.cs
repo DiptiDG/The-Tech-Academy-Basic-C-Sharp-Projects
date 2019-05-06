@@ -10,11 +10,13 @@ namespace Abstract
     {
         static void Main(string[] args)
         {
-            Employee emp = new Employee();//creating object of class employee
-            emp.firstName = "Sample";
-            emp.lastName ="Student";
-            emp.sayName();//calling sayName method
-            Console.Read();
+            IQuittable IQ = new Employee();//using plymorphism creating instance of interface IQuittable
+            IQ.Quit();
+            //Employee emp = new Employee();//creating object of class employee
+            //emp.firstName = "Sample";
+            //emp.lastName ="Student";
+            //emp.sayName();//calling sayName method
+            //Console.Read();
         }
     }
 }
