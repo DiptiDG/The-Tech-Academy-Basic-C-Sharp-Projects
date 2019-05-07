@@ -12,11 +12,8 @@ namespace OperatorOverload
         {
             Employee emp = new Employee();
             Person per = new Person();
-            emp.Id = 4;
-            per.Id = 8;
-            bool result = emp.Id == per.Id;
-            Console.WriteLine(result);
-            result = emp.Id != per.Id;
+            emp.Id = 5;
+            bool result = emp == per;//comparing object
             Console.WriteLine(result);
             Console.Read();
         }

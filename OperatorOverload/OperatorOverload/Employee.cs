@@ -13,14 +13,22 @@ namespace OperatorOverload
 
         public static bool operator ==  (Employee employee, Person person)
         {
-            
-            return true;
-
+            bool status = false;
+            if (employee.Id == person.Id)
+            {
+                status = true;
+            }
+            return status;
         }
         public static bool operator !=(Employee employee, Person person)
         {
-            
-            return true;
+            bool status = false;
+            if (employee.Id != person.Id)
+            {
+                status = true;
+            }
+            return status;
+          
 
         }
 
