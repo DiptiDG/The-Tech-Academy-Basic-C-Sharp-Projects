@@ -10,23 +10,36 @@ namespace Enumtype
     {
         static void Main(string[] args)
         {
-           
+
+
+            Console.WriteLine("Enter current day of the week ");
+            string day = Console.ReadLine();
             try
-            {
-                  Console.WriteLine("Enter current day of the week ");
-                string day = Console.ReadLine();
-                Daysoftheweek week =  (Daysoftheweek)Enum.Parse(typeof(Daysoftheweek), day);
-                if (week == Daysoftheweek.tuesday)
+            { 
+            Daysoftheweek week = (Daysoftheweek)Enum.Parse(typeof(Daysoftheweek), day);
+          
+              if( Enum.IsDefined(typeof(Daysoftheweek), week))
+
                 {
-                    Console.WriteLine("Today is tuesday");
+                    Console.WriteLine(week);
+
+                    // found!
                 }
-
-
+                else
+                {
+                    Console.WriteLine("Not Found");
+                }
             }
-            catch
-            { Console.WriteLine("Please enter an actual day of the week."); }
+            catch(System.ArgumentException)
+            {
+                Console.WriteLine("This is not actual day");
+                // utilName is not an actual Utils name
+            }
+         
             Console.Read();
         }
+
+       
 
         public enum Daysoftheweek
         {
