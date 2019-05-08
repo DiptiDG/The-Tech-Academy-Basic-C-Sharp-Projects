@@ -17,22 +17,21 @@ namespace Enumtype
             try
             { 
             Daysoftheweek week = (Daysoftheweek)Enum.Parse(typeof(Daysoftheweek), day);
-          
-              if( Enum.IsDefined(typeof(Daysoftheweek), week))
+
+         
+                if ( Enum.IsDefined(typeof(Daysoftheweek), week))
 
                 {
                     Console.WriteLine(week);
 
                     // found!
                 }
-                else
-                {
-                    Console.WriteLine("Not Found");
-                }
+               
             }
+          
             catch(System.ArgumentException)
             {
-                Console.WriteLine("This is not actual day");
+                Console.WriteLine("Please enter actual day of the week");
                 // utilName is not an actual Utils name
             }
          
