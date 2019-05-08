@@ -94,34 +94,31 @@ namespace Iteration
 
                 //creating list of string which has two identical string and it will return idices of  array that contain matching text on the scree
                 List<string> matchitemlist = new List<string>() { "milk", "fruits", "meat", "egg", "fruits", "juice" };
-                List<int> indices = new List<int>();
                 //adding code that tells a user if they put in text that isn’t in the list.
                 Console.WriteLine("you want to add extra that not in list");
                 string extra1 = Console.ReadLine();
                 matchitemlist.Add(extra1);
                 Console.WriteLine("enter text for searchfor in list");
                 string text1 = Console.ReadLine();
-
-                foreach (string element in matchitemlist)
+                if (!matchitemlist.Contains(text1))
                 {
-                    if (element == text1)
+                    Console.WriteLine("There was an error. Please only search from the given list ");
+                    //continue;
+                }
+                else
+                {
+                    Console.WriteLine("You selected " + text1 + ". The indices of that veggie are: ");
+                    for (int i = 0; i < matchitemlist.Count; i++)
                     {
-                        indices.Add(matchitemlist.IndexOf(element));
-                         if(indices.Count > 1)
+                        if (matchitemlist[i] == text1)
                         {
-                            indices.Add(matchitemlist.LastIndexOf(element));
+                            Console.WriteLine(i);
+
                         }
-                       
                     }
-
                 }
-                Console.WriteLine("Count of given item in list is : " + indices.Count);
 
-                foreach (int i in indices)
-                {
-                    Console.WriteLine("Index of given item is : " + i);
 
-                }
 
                 Console.Read();
 
