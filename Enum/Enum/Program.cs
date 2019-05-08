@@ -9,31 +9,31 @@ namespace Enumtype
     class Program
     {
         static void Main(string[] args)
-        {
-
-
+        { 
+ 
             Console.WriteLine("Enter current day of the week ");
-            string day = Console.ReadLine();
             try
             { 
-            Daysoftheweek week = (Daysoftheweek)Enum.Parse(typeof(Daysoftheweek), day);
-
-         
-                if ( Enum.IsDefined(typeof(Daysoftheweek), week))
-
-                {
-                    Console.WriteLine(week);
+                string day = Console.ReadLine();
+                 bool res = int.TryParse(day, out int num1);
+                if (res == false)
+                { 
+                Daysoftheweek week = (Daysoftheweek)Enum.Parse(typeof(Daysoftheweek), day);
+                Console.WriteLine(week);
 
                     // found!
                 }
-               
+                else 
+                {
+                    Console.WriteLine("Please enter actual day of the week");
+                }
             }
-          
-            catch(System.ArgumentException)
+            catch(Exception ex)
             {
                 Console.WriteLine("Please enter actual day of the week");
-                // utilName is not an actual Utils name
             }
+          
+              
          
             Console.Read();
         }
