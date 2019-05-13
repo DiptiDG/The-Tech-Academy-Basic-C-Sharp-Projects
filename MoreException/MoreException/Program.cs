@@ -20,8 +20,8 @@ namespace MoreException
                 {
                     throw new Exception();
                 }
-                var year = DateTime.Now.Year - age;
-                Console.WriteLine("User born in {0}", year);
+                var yearborn = DateTime.Now.Year - age;
+                Console.WriteLine("User born in {0}", yearborn);
                
               }
 
@@ -38,7 +38,7 @@ namespace MoreException
                 Console.ReadLine();
                 return;
             }
-            
+            Console.Read();
         }
     }
 }
