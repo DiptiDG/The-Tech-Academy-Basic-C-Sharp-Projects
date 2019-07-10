@@ -1,0 +1,15 @@
+C:\Users\Dipti\Source\repos\CodeFirstApproach\CodeFirstApproach\bin\Debug\CodeFirstApproach.exe.config
+C:\Users\Dipti\Source\repos\CodeFirstApproach\CodeFirstApproach\bin\Debug\CodeFirstApproach.exe
+C:\Users\Dipti\Source\repos\CodeFirstApproach\CodeFirstApproach\bin\Debug\CodeFirstApproach.pdb
+C:\Users\Dipti\Source\repos\CodeFirstApproach\CodeFirstApproach\bin\Debug\EntityFramework.dll
+C:\Users\Dipti\Source\repos\CodeFirstApproach\CodeFirstApproach\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Dipti\Source\repos\CodeFirstApproach\CodeFirstApproach\bin\Debug\EntityFramework.xml
+C:\Users\Dipti\Source\repos\CodeFirstApproach\CodeFirstApproach\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Dipti\Source\repos\CodeFirstApproach\CodeFirstApproach\obj\Debug\CodeFirstApproach.csprojAssemblyReference.cache
+C:\Users\Dipti\Source\repos\CodeFirstApproach\CodeFirstApproach\obj\Debug\CodeFirstApproach.csproj.CoreCompileInputs.cache
+C:\Users\Dipti\Source\repos\CodeFirstApproach\CodeFirstApproach\obj\Debug\CodeFirstApproach.csproj.CopyComplete
+C:\Users\Dipti\Source\repos\CodeFirstApproach\CodeFirstApproach\obj\Debug\CodeFirstApproach.exe
+C:\Users\Dipti\Source\repos\CodeFirstApproach\CodeFirstApproach\obj\Debug\CodeFirstApproach.pdb
+C:\Users\Dipti\Source\repos\CodefirstApproach\CodeFirstApproach\obj\Debug\CodeFirstApproach.Migrations.InitialCreate.resources
+C:\Users\Dipti\Source\repos\CodefirstApproach\CodeFirstApproach\obj\Debug\CodeFirstApproach.csproj.GenerateResource.cache
+C:\Users\Dipti\Source\repos\CodefirstApproach\CodeFirstApproach\obj\Debug\CodeFirstApproach.Migrations.AddAddress.resources
